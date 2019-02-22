@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CAC15FB221D61B40081EDAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC15FA221D61B40081EDAC /* AppDelegate.swift */; };
+		1CAC15FD221D61B40081EDAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC15FC221D61B40081EDAC /* ViewController.swift */; };
+		1CAC1600221D61B40081EDAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CAC15FE221D61B40081EDAC /* Main.storyboard */; };
+		1CAC1602221D61B60081EDAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CAC1601221D61B60081EDAC /* Assets.xcassets */; };
+		1CAC1605221D61B60081EDAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CAC1603221D61B60081EDAC /* LaunchScreen.storyboard */; };
+		1CAC1610221D61B60081EDAC /* DigitalSignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC160F221D61B60081EDAC /* DigitalSignatureTests.swift */; };
+		1CAC161B221D61B60081EDAC /* DigitalSignatureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC161A221D61B60081EDAC /* DigitalSignatureUITests.swift */; };
+		1CAC162F221D61D90081EDAC /* Data+Bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC1629221D61D90081EDAC /* Data+Bytes.swift */; };
+		1CAC1630221D61D90081EDAC /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC162A221D61D90081EDAC /* String+Base64.swift */; };
+		1CAC1631221D61D90081EDAC /* Data+AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC162B221D61D90081EDAC /* Data+AES.swift */; };
+		1CAC1633221D61D90081EDAC /* String+AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC162D221D61D90081EDAC /* String+AES.swift */; };
+		1CAC1634221D61D90081EDAC /* String+Hmac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC162E221D61D90081EDAC /* String+Hmac.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CAC160C221D61B60081EDAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CAC15EF221D61B40081EDAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CAC15F6221D61B40081EDAC;
+			remoteInfo = DigitalSignature;
+		};
+		1CAC1617221D61B60081EDAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CAC15EF221D61B40081EDAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CAC15F6221D61B40081EDAC;
+			remoteInfo = DigitalSignature;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CAC15F7221D61B40081EDAC /* DigitalSignature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalSignature.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CAC15FA221D61B40081EDAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CAC15FC221D61B40081EDAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1CAC15FF221D61B40081EDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CAC1601221D61B60081EDAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CAC1604221D61B60081EDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CAC1606221D61B60081EDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CAC160B221D61B60081EDAC /* DigitalSignatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitalSignatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CAC160F221D61B60081EDAC /* DigitalSignatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalSignatureTests.swift; sourceTree = "<group>"; };
+		1CAC1611221D61B60081EDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CAC1616221D61B60081EDAC /* DigitalSignatureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitalSignatureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CAC161A221D61B60081EDAC /* DigitalSignatureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalSignatureUITests.swift; sourceTree = "<group>"; };
+		1CAC161C221D61B60081EDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CAC1629221D61D90081EDAC /* Data+Bytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Bytes.swift"; sourceTree = "<group>"; };
+		1CAC162A221D61D90081EDAC /* String+Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Base64.swift"; sourceTree = "<group>"; };
+		1CAC162B221D61D90081EDAC /* Data+AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+AES.swift"; sourceTree = "<group>"; };
+		1CAC162D221D61D90081EDAC /* String+AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+AES.swift"; sourceTree = "<group>"; };
+		1CAC162E221D61D90081EDAC /* String+Hmac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Hmac.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CAC15F4221D61B40081EDAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CAC1608221D61B60081EDAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CAC1613221D61B60081EDAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CAC15EE221D61B40081EDAC = {
+			isa = PBXGroup;
+			children = (
+				1CAC15F9221D61B40081EDAC /* DigitalSignature */,
+				1CAC160E221D61B60081EDAC /* DigitalSignatureTests */,
+				1CAC1619221D61B60081EDAC /* DigitalSignatureUITests */,
+				1CAC15F8221D61B40081EDAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CAC15F8221D61B40081EDAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CAC15F7221D61B40081EDAC /* DigitalSignature.app */,
+				1CAC160B221D61B60081EDAC /* DigitalSignatureTests.xctest */,
+				1CAC1616221D61B60081EDAC /* DigitalSignatureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CAC15F9221D61B40081EDAC /* DigitalSignature */ = {
+			isa = PBXGroup;
+			children = (
+				1CAC1628221D61D90081EDAC /* EncryptionDecryptor */,
+				1CAC15FA221D61B40081EDAC /* AppDelegate.swift */,
+				1CAC15FC221D61B40081EDAC /* ViewController.swift */,
+				1CAC15FE221D61B40081EDAC /* Main.storyboard */,
+				1CAC1601221D61B60081EDAC /* Assets.xcassets */,
+				1CAC1603221D61B60081EDAC /* LaunchScreen.storyboard */,
+				1CAC1606221D61B60081EDAC /* Info.plist */,
+			);
+			path = DigitalSignature;
+			sourceTree = "<group>";
+		};
+		1CAC160E221D61B60081EDAC /* DigitalSignatureTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CAC160F221D61B60081EDAC /* DigitalSignatureTests.swift */,
+				1CAC1611221D61B60081EDAC /* Info.plist */,
+			);
+			path = DigitalSignatureTests;
+			sourceTree = "<group>";
+		};
+		1CAC1619221D61B60081EDAC /* DigitalSignatureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CAC161A221D61B60081EDAC /* DigitalSignatureUITests.swift */,
+				1CAC161C221D61B60081EDAC /* Info.plist */,
+			);
+			path = DigitalSignatureUITests;
+			sourceTree = "<group>";
+		};
+		1CAC1628221D61D90081EDAC /* EncryptionDecryptor */ = {
+			isa = PBXGroup;
+			children = (
+				1CAC1629221D61D90081EDAC /* Data+Bytes.swift */,
+				1CAC162A221D61D90081EDAC /* String+Base64.swift */,
+				1CAC162B221D61D90081EDAC /* Data+AES.swift */,
+				1CAC162D221D61D90081EDAC /* String+AES.swift */,
+				1CAC162E221D61D90081EDAC /* String+Hmac.swift */,
+			);
+			path = EncryptionDecryptor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CAC15F6221D61B40081EDAC /* DigitalSignature */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CAC161F221D61B60081EDAC /* Build configuration list for PBXNativeTarget "DigitalSignature" */;
+			buildPhases = (
+				1CAC15F3221D61B40081EDAC /* Sources */,
+				1CAC15F4221D61B40081EDAC /* Frameworks */,
+				1CAC15F5221D61B40081EDAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigitalSignature;
+			productName = DigitalSignature;
+			productReference = 1CAC15F7221D61B40081EDAC /* DigitalSignature.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CAC160A221D61B60081EDAC /* DigitalSignatureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CAC1622221D61B60081EDAC /* Build configuration list for PBXNativeTarget "DigitalSignatureTests" */;
+			buildPhases = (
+				1CAC1607221D61B60081EDAC /* Sources */,
+				1CAC1608221D61B60081EDAC /* Frameworks */,
+				1CAC1609221D61B60081EDAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CAC160D221D61B60081EDAC /* PBXTargetDependency */,
+			);
+			name = DigitalSignatureTests;
+			productName = DigitalSignatureTests;
+			productReference = 1CAC160B221D61B60081EDAC /* DigitalSignatureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CAC1615221D61B60081EDAC /* DigitalSignatureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CAC1625221D61B60081EDAC /* Build configuration list for PBXNativeTarget "DigitalSignatureUITests" */;
+			buildPhases = (
+				1CAC1612221D61B60081EDAC /* Sources */,
+				1CAC1613221D61B60081EDAC /* Frameworks */,
+				1CAC1614221D61B60081EDAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CAC1618221D61B60081EDAC /* PBXTargetDependency */,
+			);
+			name = DigitalSignatureUITests;
+			productName = DigitalSignatureUITests;
+			productReference = 1CAC1616221D61B60081EDAC /* DigitalSignatureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CAC15EF221D61B40081EDAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Mithilesh Singh";
+				TargetAttributes = {
+					1CAC15F6221D61B40081EDAC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					1CAC160A221D61B60081EDAC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1CAC15F6221D61B40081EDAC;
+					};
+					1CAC1615221D61B60081EDAC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1CAC15F6221D61B40081EDAC;
+					};
+				};
+			};
+			buildConfigurationList = 1CAC15F2221D61B40081EDAC /* Build configuration list for PBXProject "DigitalSignature" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CAC15EE221D61B40081EDAC;
+			productRefGroup = 1CAC15F8221D61B40081EDAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CAC15F6221D61B40081EDAC /* DigitalSignature */,
+				1CAC160A221D61B60081EDAC /* DigitalSignatureTests */,
+				1CAC1615221D61B60081EDAC /* DigitalSignatureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CAC15F5221D61B40081EDAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CAC1605221D61B60081EDAC /* LaunchScreen.storyboard in Resources */,
+				1CAC1602221D61B60081EDAC /* Assets.xcassets in Resources */,
+				1CAC1600221D61B40081EDAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CAC1609221D61B60081EDAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CAC1614221D61B60081EDAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CAC15F3221D61B40081EDAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CAC1631221D61D90081EDAC /* Data+AES.swift in Sources */,
+				1CAC15FD221D61B40081EDAC /* ViewController.swift in Sources */,
+				1CAC1630221D61D90081EDAC /* String+Base64.swift in Sources */,
+				1CAC162F221D61D90081EDAC /* Data+Bytes.swift in Sources */,
+				1CAC1633221D61D90081EDAC /* String+AES.swift in Sources */,
+				1CAC15FB221D61B40081EDAC /* AppDelegate.swift in Sources */,
+				1CAC1634221D61D90081EDAC /* String+Hmac.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CAC1607221D61B60081EDAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CAC1610221D61B60081EDAC /* DigitalSignatureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CAC1612221D61B60081EDAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CAC161B221D61B60081EDAC /* DigitalSignatureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CAC160D221D61B60081EDAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CAC15F6221D61B40081EDAC /* DigitalSignature */;
+			targetProxy = 1CAC160C221D61B60081EDAC /* PBXContainerItemProxy */;
+		};
+		1CAC1618221D61B60081EDAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CAC15F6221D61B40081EDAC /* DigitalSignature */;
+			targetProxy = 1CAC1617221D61B60081EDAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CAC15FE221D61B40081EDAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CAC15FF221D61B40081EDAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CAC1603221D61B60081EDAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CAC1604221D61B60081EDAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CAC161D221D61B60081EDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1CAC161E221D61B60081EDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CAC1620221D61B60081EDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DigitalSignature/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NiYO.DigitalSignature;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CAC1621221D61B60081EDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DigitalSignature/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NiYO.DigitalSignature;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1CAC1623221D61B60081EDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DigitalSignatureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NiYO.DigitalSignatureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitalSignature.app/DigitalSignature";
+			};
+			name = Debug;
+		};
+		1CAC1624221D61B60081EDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DigitalSignatureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NiYO.DigitalSignatureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitalSignature.app/DigitalSignature";
+			};
+			name = Release;
+		};
+		1CAC1626221D61B60081EDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DigitalSignatureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NiYO.DigitalSignatureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DigitalSignature;
+			};
+			name = Debug;
+		};
+		1CAC1627221D61B60081EDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DigitalSignatureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NiYO.DigitalSignatureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DigitalSignature;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CAC15F2221D61B40081EDAC /* Build configuration list for PBXProject "DigitalSignature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CAC161D221D61B60081EDAC /* Debug */,
+				1CAC161E221D61B60081EDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CAC161F221D61B60081EDAC /* Build configuration list for PBXNativeTarget "DigitalSignature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CAC1620221D61B60081EDAC /* Debug */,
+				1CAC1621221D61B60081EDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CAC1622221D61B60081EDAC /* Build configuration list for PBXNativeTarget "DigitalSignatureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CAC1623221D61B60081EDAC /* Debug */,
+				1CAC1624221D61B60081EDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CAC1625221D61B60081EDAC /* Build configuration list for PBXNativeTarget "DigitalSignatureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CAC1626221D61B60081EDAC /* Debug */,
+				1CAC1627221D61B60081EDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CAC15EF221D61B40081EDAC /* Project object */;
+}
